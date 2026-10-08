@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Ecstasy — The joy of dressing. Curated fashion, effortless style, and a shopping experience you'll love." />
+  <title>Ecstasy — The joy of dressing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="nav-left">
+        <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav"
+          aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#featured">Featured Collection</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logo-wrap">
+        <a href="#home" class="logo" aria-label="Ecstasy home">Ecstasy<span class="logo-dot">.</span></a>
+      </div>
+      <div class="header-actions">
+        <div class="search-pill" role="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" stroke="#94A3B8" stroke-width="2" />
+            <path d="M20 20l-4-4" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" />
+          </svg>
+
+          <input type="search" id="siteSearch" placeholder="Search products..." autocomplete="off">
+
+          <div class="search-suggestions" id="searchSuggestions">
+          </div>
+        </div>
+
+        <a href="Loginpage/index.html" class="icon-btn" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="8" r="4" stroke="#1E293B" stroke-width="2" />
+            <path d="M5 20c0-4 3-6 7-6s7 2 7 6" stroke="#1E293B" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </a>
+        <button type="button" class="icon-btn" aria-label="Shopping bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 8h12l-1 12H7L6 8z" stroke="#1E293B" stroke-width="2" stroke-linejoin="round" />
+            <path d="M9 8V6a3 3 0 116 0v2" stroke="#1E293B" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <ul class="container mobile-nav" id="mobile-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#how-it-works">How it works</a></li>
+      <li><a href="#featured">Featured Collection</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- Home / Hero -->
+    <section id="home" class="section hero">
+      <div class="bg-blobs" aria-hidden="true">
+        <span class="blob-lavender"></span>
+        <span class="blob-blue"></span>
+        <span class="blob-pink"></span>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="reveal">
+            <h1>The j<span class="heart-o" aria-hidden="true">♥</span>y of dressing</h1>
+            <p class="hero-desc">
+              Discover curated collections that celebrate your mood, your moment, and your
+              style—delivered with the playful energy Ecstasy is known for.
+            </p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#how-it-works">
+                Start shopping
+                <span class="btn-badge" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </span>
+              </a>
+              <button type="button" class="btn btn-secondary" data-video-open>
+                <span class="play-circle" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="#6D28D9">
+                    <path d="M8 5v14l11-7L8 5z" />
+                  </svg>
+                </span>
+                Play video
+              </button>
+            </div>
+          </div>
+          <div class="hero-proof reveal reveal-delay-2">
+            <div class="proof-card">
+              <img src="assets/images/avatar-1.png" alt="" width="48" height="48" aria-hidden="true" />
+              <div>
+                <blockquote>“I just love Ecstasy!”</blockquote>
+                <p class="proof-meta">Fashion Blogger · <span class="stars" aria-label="4.9 out of 5 stars">★★★★★</span>
+                  4.9</p>
+              </div>
+            </div>
+            <div class="avatar-stack" aria-label="Happy customers">
+              <img src="assets/images/avatar-2.png" alt="" width="40" height="40" aria-hidden="true" />
+              <img src="assets/images/avatar-3.png" alt="" width="40" height="40" aria-hidden="true" />
+              <img src="assets/images/avatar-1.png" alt="" width="40" height="40" aria-hidden="true" />
+              <span class="thumbs-badge" aria-hidden="true">👍</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal reveal-delay-1">
+          <div class="hero-circles" aria-hidden="true">
+            <span class="circle c-orange"></span>
+            <span class="circle c-teal"></span>
+            <span class="circle c-pink"></span>
+          </div>
+          <img class="hero-model" src="assets/images/hero-model.png" alt="Smiling shopper with colorful fashion bags"
+            width="480" height="640" fetchpriority="high" />
+          <article class="float-card">
+            <h4>Natural Health</h4>
+            <p>How to live a healthy lifestyle without spending a fortune.</p>
+          </article>
+          <svg class="float-icon butterfly" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16 14c-2-4-6-6-10-5 2 3 2 7 0 10 3-1 6-3 8-5 2 2 5 4 8 5-2-3-2-7 0-10-4-1-8 1-10 5z"
+              fill="#F97316" />
+          </svg>
+          <svg class="float-icon dots" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="8" cy="8" r="3" fill="#1E293B" />
+            <circle cx="24" cy="16" r="3" fill="#1E293B" />
+            <circle cx="40" cy="8" r="3" fill="#1E293B" />
+            <circle cx="16" cy="32" r="3" fill="#1E293B" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us -->
+    <section id="about" class="section about">
+      <div class="bg-blobs" aria-hidden="true">
+        <span class="blob-lavender"></span>
+        <span class="blob-pink"></span>
+      </div>
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <span class="section-label">About us</span>
+          <h2 class="section-title">Fashion that feels like you</h2>
+          <p class="section-lead">
+            Ecstasy was born from a simple idea: getting dressed should spark joy. We partner
+            with independent designers and trusted labels to bring you pieces that are bold,
+            wearable, and unmistakably you.
+          </p>
+          <p class="section-lead">
+            From everyday essentials to statement moments, every item is chosen for quality,
+            comfort, and conscious production—so you can shop with confidence and express
+            yourself freely.
+          </p>
+          <div class="pillars">
+            <article class="pillar">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6h16M4 12h10M4 18h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div>
+                <h3>Curated styles</h3>
+                <p class="section-lead" style="margin: 0.25rem 0 0">
+                  Hand-picked collections updated weekly so your wardrobe stays fresh.
+                </p>
+              </div>
+            </article>
+            <article class="pillar">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l2 4 4 .5-3 3 .8 4.5L12 13l-3.8 2 1-4.5-3-3 4-.5L12 3z" stroke="currentColor"
+                    stroke-width="2" />
+                </svg>
+              </div>
+              <div>
+                <h3>Ethical partners</h3>
+                <p class="section-lead" style="margin: 0.25rem 0 0">
+                  We work with makers who share our values for fair labor and sustainable materials.
+                </p>
+              </div>
+            </article>
+            <article class="pillar">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 10h18v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8z" stroke="currentColor" stroke-width="2" />
+                  <path d="M8 10V7a4 4 0 118 0v3" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </div>
+              <div>
+                <h3>Easy returns</h3>
+                <p class="section-lead" style="margin: 0.25rem 0 0">
+                  Try at home with hassle-free returns within 30 days—no questions asked.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="about-visual reveal reveal-delay-1">
+          <img src="assets/images/about-boutique.png" alt="Bright modern boutique interior with clothing displays"
+            width="800" height="600" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="section how-it-works">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-label">How it works</span>
+          <h2 class="section-title">Three steps to your new look</h2>
+          <p class="section-lead">
+            Shopping with Ecstasy is designed to be as smooth as our fabrics—from browse to
+            doorstep in just a few taps.
+          </p>
+        </div>
+        <div class="steps-panel reveal reveal-delay-1">
+          <h2 class="section-title">Your style journey</h2>
+          <p class="section-lead">Pick a path—empire waist, wedding vibes, or classic silhouettes.</p>
+          <div class="steps-grid">
+            <article class="step-card" tabindex="0">
+              <div class="step-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="4" width="18" height="14" rx="2" stroke="#fff" stroke-width="2" />
+                  <path d="M3 9h18" stroke="#fff" stroke-width="2" />
+                </svg>
+              </div>
+              <p class="step-num">01</p>
+              <h3>Browse collections</h3>
+              <p>Explore dresses, accessories, and seasonal edits tailored to your taste.</p>
+            </article>
+            <article class="step-card" tabindex="0">
+              <div class="step-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6l2-6z" stroke="#fff" stroke-width="2" />
+                </svg>
+              </div>
+              <p class="step-num">02</p>
+              <h3>Choose your fit</h3>
+              <p>Use size guides and stylist tips to find pieces that flatter and feel amazing.</p>
+            </article>
+            <article class="step-card" tabindex="0">
+              <div class="step-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6h16v12H4V6z" stroke="#fff" stroke-width="2" />
+                  <path d="M4 10h16" stroke="#fff" stroke-width="2" />
+                </svg>
+              </div>
+              <p class="step-num">03</p>
+              <h3>Enjoy delivery</h3>
+              <p>Fast, tracked shipping and eco-friendly packaging straight to your door.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section id="featured" class="section featured-collection">
+
+      <div class="container">
+
+        <!-- Heading -->
+        <div class="featured-heading reveal">
+
+          <span class="section-label">
+            Curated for you
+          </span>
+
+          <h2 class="section-title">
+            Featured Collection
+          </h2>
+
+          <p class="section-lead">
+            Discover standout essentials selected for modern style,
+            effortless comfort, and everyday confidence.
+          </p>
+
+        </div>
+
+
+        <!-- Products -->
+        <div class="featured-grid">
+
+
+          <!-- Jacket -->
+          <!-- <article class="featured-card reveal"> -->
+          <!-- <article class="featured-card reveal" data-product-card="jacket"> -->
+          <a class="featured-card reveal" data-product-card="jacket" href="Productpage/index.html?product=jacket">
+
+            <div class="featured-image-wrap">
+
+              <img class="featured-image" src="assets/images/featured/jacket.jpg" alt="Urban leather jacket"
+                loading="lazy">
+
+              <span class="featured-badge">
+                Featured
+              </span>
+
+              <span class="featured-arrow">
+                ↗
+              </span>
+
+            </div>
+
+
+            <div class="featured-product-content">
+
+              <div>
+
+                <p class="featured-category">
+                  Outerwear / Premium
+                </p>
+
+                <h3 class="featured-product-name">
+                  Premium Leather Jacket
+                </h3>
+
+              </div>
+
+              <p class="featured-price">
+                $129
+              </p>
+
+            </div>
+
+          </a>
+
+
+
+          <!-- Casual Shirt -->
+
+          <a class="featured-card reveal reveal-delay-1" data-product-card="shirt"
+            href="Productpage/index.html?product=shirt">
+
+            <div class="featured-image-wrap">
+
+              <img class="featured-image" src="assets/images/featured/shirt.jpg" alt="Signature casual shirt"
+                loading="lazy">
+
+              <span class="featured-badge">
+                New
+              </span>
+
+              <span class="featured-arrow">
+                ↗
+              </span>
+
+            </div>
+
+
+            <div class="featured-product-content">
+
+              <div>
+
+                <p class="featured-category">
+                  Casual / Essentials
+                </p>
+
+                <h3 class="featured-product-name">
+                  Signature Casual Shirt
+                </h3>
+
+              </div>
+
+              <p class="featured-price">
+                $69
+              </p>
+
+            </div>
+
+          </a>
+
+
+
+          <!-- Trouser -->
+
+          <a class="featured-card reveal reveal-delay-2" data-product-card="trouser"
+            href="Productpage/index.html?product=trouser">
+
+            <div class="featured-image-wrap">
+
+              <img class="featured-image" src="assets/images/featured/trouser.jpg" alt="Tailored everyday trouser"
+                loading="lazy">
+
+              <span class="featured-badge">
+                Bestseller
+              </span>
+
+              <span class="featured-arrow">
+                ↗
+              </span>
+
+            </div>
+
+
+            <div class="featured-product-content">
+
+              <div>
+
+                <p class="featured-category">
+                  Bottoms / Modern
+                </p>
+
+                <h3 class="featured-product-name">
+                  Tailored Everyday Trouser
+                </h3>
+
+              </div>
+
+              <p class="featured-price">
+                $79
+              </p>
+
+            </div>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Product Detail -->
+    <section id="product-detail" class="section product-detail" hidden>
+
+      <div class="container">
+
+        <button type="button" class="product-back" id="productBack">
+          ← Back to collection
+        </button>
+
+        <div class="product-detail-grid">
+
+          <div class="product-detail-media">
+            <img id="detailImage" src="" alt="">
+          </div>
+
+          <div class="product-detail-content">
+
+            <span class="product-detail-category" id="detailCategory">
+            </span>
+
+            <h2 class="product-detail-title" id="detailTitle">
+            </h2>
+
+            <p class="product-detail-price" id="detailPrice">
+            </p>
+
+            <p class="product-detail-description" id="detailDescription">
+            </p>
+
+            <div class="size-section">
+
+              <p class="size-title">
+                Select your size
+              </p>
+
+              <div class="size-options">
+
+                <button type="button" class="size-btn" data-size="S">
+                  S
+                </button>
+
+                <button type="button" class="size-btn" data-size="M">
+                  M
+                </button>
+
+                <button type="button" class="size-btn" data-size="L">
+                  L
+                </button>
+
+                <button type="button" class="size-btn" data-size="XL">
+                  XL
+                </button>
+
+              </div>
+
+              <p class="size-message" id="sizeMessage" aria-live="polite">
+              </p>
+
+            </div>
+
+            <button type="button" class="product-add-btn" id="addToBag">
+              Add to bag
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section testimonials">
+      <div class="bg-blobs" aria-hidden="true">
+        <span class="blob-blue"></span>
+      </div>
+      <div class="container">
+        <header class="testimonials-header reveal">
+          <div class="rating-banner">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span>4.9 average from 2,400+ reviews</span>
+          </div>
+          <span class="section-label">Testimonials</span>
+          <h2 class="section-title">Loved by style seekers everywhere</h2>
+          <p class="section-lead">
+            Real voices from bloggers, stylists, and customers who made Ecstasy part of their
+            everyday ritual.
+          </p>
+        </header>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div class="top">
+              <img src="assets/images/avatar-1.png" alt="Portrait of Mia Chen" width="56" height="56" />
+              <div>
+                <strong>Mia Chen</strong>
+                <p class="role">Fashion Blogger</p>
+              </div>
+            </div>
+            <blockquote>
+              “Ecstasy nails that sweet spot between playful and polished. My followers always
+              ask where my outfits are from!”
+            </blockquote>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+          </article>
+          <article class="testimonial-card reveal reveal-delay-1">
+            <div class="top">
+              <img src="assets/images/avatar-2.png" alt="Portrait of James Okoro" width="56" height="56" />
+              <div>
+                <strong>James Okoro</strong>
+                <p class="role">Personal Stylist</p>
+              </div>
+            </div>
+            <blockquote>
+              “The curation is thoughtful—I recommend Ecstasy to clients who want quality without
+              the overwhelm of big-box browsing.”
+            </blockquote>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+          </article>
+          <article class="testimonial-card reveal reveal-delay-2">
+            <div class="top">
+              <img src="assets/images/avatar-3.png" alt="Portrait of Sofia Rivera" width="56" height="56" />
+              <div>
+                <strong>Sofia Rivera</strong>
+                <p class="role">Customer</p>
+              </div>
+            </div>
+            <blockquote>
+              “Returns were painless and my dress arrived in two days. The purple packaging alone
+              made me smile.”
+            </blockquote>
+            <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Ecstasy<span class="logo-dot">.</span></a>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+      <p>&copy; 2026 Ecstasy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="video-title" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+      <button type="button" class="modal-close" aria-label="Close video dialog">
+        &times;
+      </button>
+
+      <h2 id="video-title" class="section-title" style="font-size: 1.5rem; margin: 0 0 1rem;">
+        Ecstasy fashion film
+      </h2>
+
+      <video id="fashionVideo" class="modal-video" controls preload="metadata">
+
+        <source src="Videos/fashion-ad.mp4" type="video/mp4">
+
+        Your browser does not support HTML5 video.
+
+      </video>
+
+    </div>
+
+  </div>
+
+  <!-- <script src="js/main.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="../js/products.js" defer></script> -->
+
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/cart.js" defer></script>
+
+
+</body>
+
+</html>
