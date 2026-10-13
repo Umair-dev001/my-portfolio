@@ -63,6 +63,28 @@ button {
   background: none;
 }
 
+/* Remove mobile browser tap highlight */
+a,
+button,
+input,
+select,
+textarea,
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* Remove pointer-click focus outline,
+   but keep keyboard accessibility */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible),
+[role="button"]:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .container {
   width: var(--container);
   margin-inline: auto;
@@ -1359,7 +1381,7 @@ button {
     border-color 0.22s ease,
     transform 0.22s var(--ease-out),
     box-shadow 0.22s ease;
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -1455,8 +1477,7 @@ button {
   appearance: none;
 
   padding:
-    0.65rem 2.6rem
-    0.65rem 1rem;
+    0.65rem 2.6rem 0.65rem 1rem;
 
   border: 1px solid #e2e4e8;
   border-radius: 999px;
@@ -1569,8 +1590,7 @@ button {
   display: grid;
 
   grid-template-columns:
-    minmax(230px, 320px)
-    minmax(0, 1fr);
+    minmax(230px, 320px) minmax(0, 1fr);
 
   align-items: center;
 
@@ -1711,6 +1731,7 @@ button {
   }
 
 }
+
 /* Tablet */
 
 @media (max-width: 900px) {

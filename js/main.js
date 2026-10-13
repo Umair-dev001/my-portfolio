@@ -75,10 +75,10 @@
   //       .join("");
   // }
 
-    /* ========================================
-     Featured Collection
-     Filters + Sorting + View Switching
-     ======================================== */
+  /* ========================================
+   Featured Collection
+   Filters + Sorting + View Switching
+   ======================================== */
 
   const featuredGrid =
     document.querySelector(".featured-grid");
@@ -208,15 +208,15 @@
         ? [...collectionProducts]
 
         : collectionProducts.filter(
-            (product) =>
-              getProductGroup(product)
-              ===
-              activeCollectionFilter
-          );
+          (product) =>
+            getProductGroup(product)
+            ===
+            activeCollectionFilter
+        );
 
 
     switch (
-      activeCollectionSort
+    activeCollectionSort
     ) {
 
       case "price-low":
@@ -642,7 +642,7 @@
   // ];
 
   const searchableProducts =
-  Object.values(window.ECSTASY_PRODUCTS);
+    Object.values(window.ECSTASY_PRODUCTS);
 
 
   siteSearch?.addEventListener("input", () => {
