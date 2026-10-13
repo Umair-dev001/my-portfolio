@@ -1359,6 +1359,7 @@ button {
     border-color 0.22s ease,
     transform 0.22s var(--ease-out),
     box-shadow 0.22s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
