@@ -299,6 +299,180 @@
 
         </div>
 
+                <!-- Collection Controls -->
+        <div class="collection-toolbar">
+
+          <!-- Category Filters -->
+          <div
+            class="collection-filters"
+            role="group"
+            aria-label="Filter products"
+          >
+
+            <button
+              type="button"
+              class="collection-filter is-active"
+              data-collection-filter="all"
+              aria-pressed="true"
+            >
+              All
+              <span>
+                (<span data-filter-count="all">9</span>)
+              </span>
+            </button>
+
+            <button
+              type="button"
+              class="collection-filter"
+              data-collection-filter="outerwear"
+              aria-pressed="false"
+            >
+              Outerwear
+              <span>
+                (<span data-filter-count="outerwear">2</span>)
+              </span>
+            </button>
+
+            <button
+              type="button"
+              class="collection-filter"
+              data-collection-filter="tops"
+              aria-pressed="false"
+            >
+              Tops
+              <span>
+                (<span data-filter-count="tops">4</span>)
+              </span>
+            </button>
+
+            <button
+              type="button"
+              class="collection-filter"
+              data-collection-filter="bottoms"
+              aria-pressed="false"
+            >
+              Bottoms
+              <span>
+                (<span data-filter-count="bottoms">3</span>)
+              </span>
+            </button>
+
+          </div>
+
+
+          <!-- Sort + View + Result Count -->
+          <div class="collection-tools">
+
+            <label
+              class="collection-sort"
+              for="collectionSort"
+            >
+
+              <span class="collection-sort-label">
+                Sort by:
+              </span>
+
+              <span class="collection-sort-select">
+
+                <select id="collectionSort">
+                  <option value="featured">
+                    Featured
+                  </option>
+
+                  <option value="price-low">
+                    Price: Low to High
+                  </option>
+
+                  <option value="price-high">
+                    Price: High to Low
+                  </option>
+
+                  <option value="rating">
+                    Highest Rated
+                  </option>
+
+                  <option value="name">
+                    Name: A–Z
+                  </option>
+                </select>
+
+              </span>
+
+            </label>
+
+
+            <!-- View Switch -->
+            <div
+              class="collection-view-switch"
+              role="group"
+              aria-label="Product view"
+            >
+
+              <button
+                type="button"
+                class="collection-view-button is-active"
+                data-view-mode="grid"
+                aria-label="Grid view"
+                aria-pressed="true"
+              >
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="7" height="7" rx="1"
+                    stroke="currentColor" stroke-width="2" />
+                  <rect x="14" y="3" width="7" height="7" rx="1"
+                    stroke="currentColor" stroke-width="2" />
+                  <rect x="3" y="14" width="7" height="7" rx="1"
+                    stroke="currentColor" stroke-width="2" />
+                  <rect x="14" y="14" width="7" height="7" rx="1"
+                    stroke="currentColor" stroke-width="2" />
+                </svg>
+              </button>
+
+              <button
+                type="button"
+                class="collection-view-button"
+                data-view-mode="list"
+                aria-label="List view"
+                aria-pressed="false"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path d="M9 6h12M9 12h12M9 18h12"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round" />
+
+                  <circle cx="4" cy="6" r="1.5" fill="currentColor" />
+                  <circle cx="4" cy="12" r="1.5" fill="currentColor" />
+                  <circle cx="4" cy="18" r="1.5" fill="currentColor" />
+                </svg>
+              </button>
+
+            </div>
+
+
+            <p
+              class="collection-result-count"
+              id="collectionResultCount"
+              aria-live="polite"
+            >
+              Showing 9 products
+            </p>
+
+          </div>
+
+        </div>
+
 
         <!-- Products -->
         <div class="featured-grid">
