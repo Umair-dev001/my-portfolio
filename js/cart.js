@@ -1787,6 +1787,41 @@
      ======================================== */
 
 
+  // checkoutButton.addEventListener(
+
+  //   "click",
+
+  //   () => {
+
+
+  //     if (
+  //       !readCart().length
+  //     ) {
+
+
+  //       return;
+
+
+  //     }
+
+
+
+  //     showCartToast(
+
+  //       "Cart is ready — checkout page is the next step."
+
+  //     );
+
+
+  //   }
+
+  // );
+
+    /* ========================================
+     CHECKOUT
+     ======================================== */
+
+
   checkoutButton.addEventListener(
 
     "click",
@@ -1794,23 +1829,24 @@
     () => {
 
 
-      if (
-        !readCart().length
-      ) {
+      const cart =
+        readCart();
 
+
+      if (!cart.length) {
 
         return;
-
 
       }
 
 
+      window.location.href =
 
-      showCartToast(
+        isProductPage()
 
-        "Cart is ready — checkout page is the next step."
+          ? "../Checkout/index.html"
 
-      );
+          : "Checkout/index.html";
 
 
     }
