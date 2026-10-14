@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Your saved Ecstasy fashion pieces."
+  >
+
+  <title>Your Wishlist — Ecstasy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../css/styles.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="../css/cart.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="wishlist.css"
+  >
+</head>
+
+
+<body class="wishlist-page">
+
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+
+      <div class="nav-left">
+
+        <button
+          type="button"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+
+        <nav aria-label="Primary">
+
+          <ul class="nav-links">
+
+            <li>
+              <a href="../index.html#home">Home</a>
+            </li>
+
+            <li>
+              <a href="../index.html#about">About</a>
+            </li>
+
+            <li>
+              <a href="../index.html#how-it-works">
+                How it works
+              </a>
+            </li>
+
+            <li>
+              <a href="../index.html#featured">
+                Featured Collection
+              </a>
+            </li>
+
+            <li>
+              <a href="../index.html#testimonials">
+                Testimonials
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+
+
+      <!-- LOGO -->
+
+      <div class="logo-wrap">
+
+        <a
+          href="../index.html#home"
+          class="logo"
+          aria-label="Ecstasy home"
+        >
+          Ecstasy<span class="logo-dot">.</span>
+        </a>
+
+      </div>
+
+
+      <!-- ACTIONS -->
+
+      <div class="header-actions">
+
+
+        <!-- SEARCH -->
+
+        <div
+          class="search-pill"
+          role="search"
+        >
+
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <circle
+              cx="11"
+              cy="11"
+              r="7"
+              stroke="#94A3B8"
+              stroke-width="2"
+            />
+
+            <path
+              d="M20 20l-4-4"
+              stroke="#94A3B8"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+
+
+          <input
+            type="search"
+            id="wishlistSearch"
+            placeholder="Search products..."
+            autocomplete="off"
+          >
+
+
+          <div
+            class="search-suggestions"
+            id="wishlistSearchSuggestions"
+          ></div>
+
+        </div>
+
+
+        <!-- ACCOUNT -->
+
+        <a
+          href="../Loginpage/index.html"
+          class="icon-btn"
+          aria-label="Account"
+        >
+
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <circle
+              cx="12"
+              cy="8"
+              r="4"
+              stroke="#1E293B"
+              stroke-width="2"
+            />
+
+            <path
+              d="M5 20c0-4 3-6 7-6s7 2 7 6"
+              stroke="#1E293B"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+
+        </a>
+
+
+        <!-- WISHLIST -->
+
+        <a
+          href="index.html"
+          class="icon-btn wishlist-nav-button is-current"
+          aria-label="Wishlist"
+        >
+
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+
+            <path
+              d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 00-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linejoin="round"
+            />
+
+          </svg>
+
+
+          <span
+            class="wishlist-nav-count"
+            data-wishlist-count
+            hidden
+          >
+            0
+          </span>
+
+        </a>
+
+
+        <!-- BAG -->
+
+        <button
+          type="button"
+          class="icon-btn"
+          aria-label="Shopping bag"
+        >
+
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+
+            <path
+              d="M6 8h12l-1 12H7L6 8z"
+              stroke="#1E293B"
+              stroke-width="2"
+              stroke-linejoin="round"
+            />
+
+            <path
+              d="M9 8V6a3 3 0 116 0v2"
+              stroke="#1E293B"
+              stroke-width="2"
+            />
+
+          </svg>
+
+        </button>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- MOBILE NAV -->
+
+    <ul
+      class="container mobile-nav"
+      id="mobile-nav"
+    >
+
+      <li>
+        <a href="../index.html#home">Home</a>
+      </li>
+
+      <li>
+        <a href="../index.html#about">About</a>
+      </li>
+
+      <li>
+        <a href="../index.html#how-it-works">
+          How it works
+        </a>
+      </li>
+
+      <li>
+        <a href="../index.html#featured">
+          Featured Collection
+        </a>
+      </li>
+
+      <li>
+        <a href="index.html">
+          Wishlist
+        </a>
+      </li>
+
+      <li>
+        <a href="../index.html#testimonials">
+          Testimonials
+        </a>
+      </li>
+
+    </ul>
+
+  </header>
+
+
+
+  <!-- WISHLIST -->
+
+  <main class="wishlist-main">
+
+    <section class="wishlist-hero">
+
+
+      <span
+        class="wishlist-decoration wishlist-decoration-orange"
+        aria-hidden="true"
+      >
+        ✦
+      </span>
+
+
+      <span
+        class="wishlist-decoration wishlist-decoration-dots"
+        aria-hidden="true"
+      >
+        • •<br>• •
+      </span>
+
+
+      <div class="container">
+
+
+        <!-- HEADING -->
+
+        <div class="wishlist-heading-row">
+
+          <div class="wishlist-heading">
+
+            <span class="section-label">
+              Saved for later
+            </span>
+
+
+            <h1>
+              Your Wishlist
+
+              <span
+                class="wishlist-title-heart"
+                aria-hidden="true"
+              >
+                ♥
+              </span>
+            </h1>
+
+
+            <p>
+              Saved pieces you love, all in one place.
+            </p>
+
+          </div>
+
+
+          <a
+            href="../index.html#featured"
+            class="wishlist-continue"
+          >
+            <span aria-hidden="true">←</span>
+
+            Continue Shopping
+          </a>
+
+        </div>
+
+
+
+        <!-- TABS -->
+
+        <div class="wishlist-toolbar">
+
+          <div
+            class="wishlist-tabs"
+            role="tablist"
+            aria-label="Wishlist views"
+          >
+
+            <button
+              type="button"
+              class="wishlist-tab is-active"
+              data-wishlist-view="saved"
+              aria-selected="true"
+            >
+
+              <span aria-hidden="true">
+                ♡
+              </span>
+
+              Saved Items
+
+              (<span id="savedItemsCount">0</span>)
+
+            </button>
+
+
+            <button
+              type="button"
+              class="wishlist-tab"
+              data-wishlist-view="recent"
+              aria-selected="false"
+            >
+              Recently Viewed
+            </button>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- PRODUCTS -->
+
+        <div
+          class="wishlist-grid"
+          id="wishlistGrid"
+          aria-live="polite"
+        ></div>
+
+
+
+        <!-- DISCOVER -->
+
+        <section class="wishlist-discover">
+
+          <div class="wishlist-discover-copy">
+
+            <span class="wishlist-discover-label">
+              Find your next favorite
+            </span>
+
+
+            <h2>
+              Discover
+
+              <span>
+                More Pieces
+              </span>
+            </h2>
+
+
+            <p>
+              Explore new arrivals, trending styles,
+              and curated collections.
+            </p>
+
+          </div>
+
+
+          <a
+            href="../index.html#featured"
+            class="wishlist-discover-button"
+          >
+            Explore Collection
+
+            <span aria-hidden="true">
+              →
+            </span>
+          </a>
+
+
+          <img
+            class="wishlist-discover-model"
+            src="../assets/images/hero-model.png"
+            alt=""
+            aria-hidden="true"
+          >
+
+
+          <span
+            class="wishlist-discover-spark"
+            aria-hidden="true"
+          >
+            ✦
+          </span>
+
+        </section>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- SCRIPTS -->
+
+  <script
+    src="../js/products.js"
+    defer
+  ></script>
+
+  <script
+    src="../js/wishlist-header.js"
+    defer
+  ></script>
+
+  <script
+    src="wishlist.js"
+    defer
+  ></script>
+
+  <script
+    src="../js/cart.js"
+    defer
+  ></script>
+
+
+</body>
+
+</html>
