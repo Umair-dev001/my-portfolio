@@ -4,77 +4,7 @@
   const menuToggle = document.querySelector(".menu-toggle");
   const mobileNav = document.querySelector(".mobile-nav");
   const mobileLinks = document.querySelectorAll(".mobile-nav a, .nav-links a");
-  // const revealEls = document.querySelectorAll(".reveal");
-
-  //   const featuredGrid =
-  //   document.querySelector(".featured-grid");
-
-  // if (featuredGrid && window.ECSTASY_PRODUCTS) {
-
-  //   featuredGrid.innerHTML =
-  //     Object.values(window.ECSTASY_PRODUCTS)
-  //       .map((product, index) => {
-
-  //         const delayClass =
-  //           index % 3 === 1
-  //             ? " reveal-delay-1"
-  //             : index % 3 === 2
-  //               ? " reveal-delay-2"
-  //               : "";
-
-  //         return `
-  //           <a
-  //             class="featured-card reveal${delayClass}"
-  //             data-product-card="${product.id}"
-  //             href="Productpage/index.html?product=${encodeURIComponent(product.id)}"
-  //           >
-
-  //             <div class="featured-image-wrap">
-
-  //               <img
-  //                 class="featured-image"
-  //                 src="${product.image}"
-  //                 alt="${product.name}"
-  //                 loading="lazy"
-  //               >
-
-  //               <span class="featured-badge">
-  //                 ${product.badge}
-  //               </span>
-
-  //               <span class="featured-arrow">
-  //                 ↗
-  //               </span>
-
-  //             </div>
-
-
-  //             <div class="featured-product-content">
-
-  //               <div>
-
-  //                 <p class="featured-category">
-  //                   ${product.category}
-  //                 </p>
-
-  //                 <h3 class="featured-product-name">
-  //                   ${product.name}
-  //                 </h3>
-
-  //               </div>
-
-  //               <p class="featured-price">
-  //                 $${product.price}
-  //               </p>
-
-  //             </div>
-
-  //           </a>
-  //         `;
-  //       })
-  //       .join("");
-  // }
-
+ 
   /* ========================================
    Featured Collection
    Filters + Sorting + View Switching
