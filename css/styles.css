@@ -261,6 +261,59 @@ textarea:focus:not(:focus-visible),
   transform: scale(1.05);
 }
 
+/* ========================================
+   HEADER WISHLIST
+   ======================================== */
+
+.wishlist-nav-button {
+  position: relative;
+}
+
+
+.wishlist-nav-button.is-current {
+  color: var(--pink);
+}
+
+
+.wishlist-nav-count {
+  position: absolute;
+
+  top: -4px;
+  right: -4px;
+
+  min-width: 20px;
+  height: 20px;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0 0.28rem;
+
+  border: 2px solid #ffffff;
+  border-radius: 999px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--pink),
+      #f472b6
+    );
+
+  font-size: 0.58rem;
+  font-weight: 700;
+  line-height: 1;
+
+  box-shadow:
+    0 5px 14px rgba(236, 72, 153, 0.28);
+}
+
+
+.wishlist-nav-count[hidden] {
+  display: none;
+}
+
 .menu-toggle {
   display: none;
   width: 44px;
