@@ -33,14 +33,101 @@
         Back to collection
       </a>
 
-      <button type="button" class="product-bag-button" id="cartButton" aria-label="View bag summary">
+      <!-- <button type="button" class="product-bag-button" id="cartButton" aria-label="View bag summary">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M6 8h12l-1 12H7L6 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
           <path d="M9 8V6a3 3 0 116 0v2" stroke="currentColor" stroke-width="2" />
         </svg>
         <span class="bag-label">Bag</span>
         <span class="bag-count" id="bagCount">0</span>
-      </button>
+      </button> -->
+
+      <div class="product-header-actions">
+
+
+  <a
+    href="../Wishlist/index.html"
+    class="product-wishlist-nav wishlist-nav-button"
+    aria-label="Wishlist"
+  >
+
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+
+      <path
+        d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 00-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"
+      />
+
+    </svg>
+
+
+    <span
+      class="wishlist-nav-count"
+      data-wishlist-count
+      hidden
+    >
+      0
+    </span>
+
+  </a>
+
+
+
+  <button
+    type="button"
+    class="product-bag-button"
+    id="cartButton"
+    aria-label="View bag summary"
+  >
+
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      aria-hidden="true"
+    >
+
+      <path
+        d="M6 8h12l-1 12H7L6 8z"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linejoin="round"
+      />
+
+      <path
+        d="M9 8V6a3 3 0 116 0v2"
+        stroke="currentColor"
+        stroke-width="2"
+      />
+
+    </svg>
+
+
+    <span class="bag-label">
+      Bag
+    </span>
+
+
+    <span
+      class="bag-count"
+      id="bagCount"
+    >
+      0
+    </span>
+
+  </button>
+
+
+</div>
     </div>
   </header>
 
@@ -341,8 +428,13 @@
 
 
 
+<!-- <script src="../js/products.js" defer></script>
+<script src="product.js" defer></script>
+<script src="../js/cart.js" defer></script> -->
+
 <script src="../js/products.js" defer></script>
 <script src="product.js" defer></script>
+<script src="../js/wishlist-header.js" defer></script>
 <script src="../js/cart.js" defer></script>
 </body>
 

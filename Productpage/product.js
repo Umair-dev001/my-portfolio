@@ -536,6 +536,9 @@
       : [...wishlist, product.id];
 
     writeStorage(WISHLIST_KEY, nextWishlist);
+    window.dispatchEvent(
+  new CustomEvent("ecstasy:wishlist-updated")
+);
     renderWishlistState();
 
     showToast(
