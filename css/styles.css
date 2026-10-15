@@ -1116,6 +1116,43 @@ textarea:focus:not(:focus-visible),
     width: 90px;
     height: 90px;
   }
+
+  /* Mobile header single row fix */
+
+.header-inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.nav-left {
+  order: initial;
+  justify-self: start;
+}
+
+.logo-wrap {
+  order: initial;
+  flex: none;
+  justify-self: center;
+  text-align: center;
+}
+
+.header-actions {
+  order: initial;
+  justify-self: end;
+
+  display: flex;
+  align-items: center;
+
+  gap: 0.35rem;
+}
+
+.menu-toggle,
+.icon-btn {
+  width: 38px;
+  height: 38px;
+}
 }
 
 @media (max-width: 480px) {
